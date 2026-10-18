@@ -64,7 +64,7 @@ warnings.filterwarnings("ignore", message=".*uses fixed sampling defaults.*", ca
 _ENV_VAR_BY_BACKEND = {"groq": "GROQ_API_KEY", "gemini": "GOOGLE_API_KEY"}
 _MODEL_BY_BACKEND = {
     "groq": "openai/gpt-oss-120b",
-    "gemini": "gemini-3.6-flash",
+    "gemini": "gemini-3.1-flash-lite",  # TEMP: original "gemini-3.6-flash" (503 high demand on Oct 15) -- revert later
 }
 _DEFAULT_REQUEST_TIMEOUT_SECONDS = 60
 _MAX_NUMBERED_KEYS = 10
